@@ -3,7 +3,8 @@
   "private": true,
   "license": "MIT",
   "devDependencies": {
-    "patch-package": "^6.4.7"
+    "patch-package": "^6.4.7",
+    "prettier": "^2.4.1"
   },
   "workspaces": [
     "packages/app",

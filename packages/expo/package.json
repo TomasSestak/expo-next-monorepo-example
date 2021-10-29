@@ -31,8 +31,11 @@
     "build:production:android": "STAGE=production eas build --profile production --platform android"
   },
   "dependencies": {
+    "@dripsy/gradient": "^3.0.3",
     "@gorhom/bottom-sheet": "^4.1.3",
+    "@reduxjs/toolkit": "^1.6.2",
     "app": "*",
+    "asset": "^0.4.13",
     "dripsy": "^3.0.0",
     "expo": "^43.0.0",
     "expo-app-loading": "~1.2.1",
@@ -43,19 +46,23 @@
     "expo-font": "~10.0.3",
     "expo-haptics": "~11.0.3",
     "expo-linking": "~2.4.2",
-    "expo-modules-core": "~0.4.4",
+    "expo-modules-core": "~0.4.7",
+    "expo-next-react-navigation": "^2.0.2",
     "expo-notifications": "~0.13.3",
     "expo-splash-screen": "^0.13.4",
     "expo-status-bar": "~1.1.0",
-    "expo-updates": "~0.10.5",
+    "expo-updates": "~0.10.6",
+    "firebase": "^9.1.3",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-hook-form": "^7.18.0",
     "react-native": "0.64.2",
     "react-native-gesture-handler": "~1.10.2",
     "react-native-reanimated": "~2.2.0",
     "react-native-safe-area-context": "3.3.2",
     "react-native-screens": "~3.8.0",
-    "react-native-web": "0.17.1"
+    "react-native-web": "0.17.1",
+    "react-redux": "^7.2.6"
   },
   "devDependencies": {
     "@babel/core": "^7.14.8",

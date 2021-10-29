@@ -5,17 +5,23 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { DripsyProvider } from 'dripsy';
 
 import { theme } from 'app/theme';
-import { HelloWorld } from 'app/hello-world';
+import FontsProvider from 'app/providers/FontsProvider';
+import FirebaseProvider from 'app/providers/FirebaseProvider';
+import Register from 'app/components/auth/Register';
 
 enableScreens(true);
 
 export default function App() {
-  return (
-    <DripsyProvider theme={theme}>
-      <SafeAreaProvider>
-        <StatusBar style="dark" />
-        <HelloWorld />
-      </SafeAreaProvider>
-    </DripsyProvider>
-  );
+	return (
+		<FirebaseProvider>
+			<FontsProvider>
+				<DripsyProvider theme={theme}>
+					<SafeAreaProvider>
+						<StatusBar style="dark" />
+						<Register />
+					</SafeAreaProvider>
+				</DripsyProvider>
+			</FontsProvider>
+		</FirebaseProvider>
+	);
 }
