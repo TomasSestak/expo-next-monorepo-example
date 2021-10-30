@@ -1,24 +1,24 @@
 {
-  "name": "expo-next-monorepo-example",
-  "private": true,
-  "license": "MIT",
-  "devDependencies": {
-    "patch-package": "^6.4.7",
-    "prettier": "^2.4.1"
-  },
-  "workspaces": [
-    "packages/app",
-    "packages/expo",
-    "packages/next"
-  ],
-  "scripts": {
-    "dev:expo": "yarn workspace @expo-next-monorepo-example/expo dev",
-    "dev:next": "yarn workspace @expo-next-monorepo-example/next dev",
-    "build": "cd packages/next && yarn build",
-    "deploy": "vercel --prod --no-clipboard",
-    "postinstall": "patch-package"
-  },
-  "resolutions": {
-    "babel-preset-expo": "^8.5.1"
-  }
+	"name": "expo-next-monorepo-example",
+	"private": true,
+	"license": "MIT",
+	"devDependencies": {
+		"patch-package": "^6.4.7",
+		"prettier": "^2.4.1"
+	},
+	"workspaces": [
+		"packages/app",
+		"packages/expo",
+		"packages/next"
+	],
+	"scripts": {
+		"dev:expo": "yarn workspace @expo-next-monorepo-example/expo dev",
+		"dev:next": "yarn workspace @expo-next-monorepo-example/next dev",
+		"build": "cd packages/next && yarn build",
+		"deploy": "vercel --prod --no-clipboard",
+		"postinstall": "patch-package"
+	},
+	"resolutions": {
+		"babel-preset-expo": "^8.5.1"
+	}
 }
