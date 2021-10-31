@@ -2,7 +2,7 @@ import React from 'react';
 import { enableScreens } from 'react-native-screens';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { DripsyProvider } from 'dripsy';
+import { DripsyProvider, Text, View } from 'dripsy';
 
 import { theme } from 'app/theme';
 import FontsProvider from 'app/providers/FontsProvider';
@@ -11,7 +11,7 @@ import Register from 'app/components/auth/Register';
 
 enableScreens(true);
 
-export default function App() {
+const App = () => {
 	return (
 		<FirebaseProvider>
 			<FontsProvider>
@@ -19,9 +19,14 @@ export default function App() {
 					<SafeAreaProvider>
 						<StatusBar style="dark" />
 						<Register />
+						<View>
+							<Text>aaa</Text>
+						</View>
 					</SafeAreaProvider>
 				</DripsyProvider>
 			</FontsProvider>
 		</FirebaseProvider>
 	);
-}
+};
+
+export default App;

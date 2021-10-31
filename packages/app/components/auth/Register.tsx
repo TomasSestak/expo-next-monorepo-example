@@ -1,12 +1,9 @@
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
 import { TextInput, View, Pressable, Text } from 'dripsy';
-import { useForm } from 'react-hook-form';
 import { useState } from 'react';
 import Input from 'app/components/form/Input';
 
 const Register = () => {
-	const { handleSubmit, control } = useForm();
-
 	const onSubmit = async ({ email, password }) => {
 		const auth = getAuth();
 
